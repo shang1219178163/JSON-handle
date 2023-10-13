@@ -1,6 +1,6 @@
 //alert('content_scripts.js');
 
-chrome.extension.sendRequest({cmd:'getIni'}, (function () {
+chrome.runtime.sendMessage({cmd:'getIni'}, (function () {
 	var _pub_static = function () {var _pri = {}, _pub = {};
 		var _init = function (oIni) {
 
@@ -92,7 +92,7 @@ chrome.extension.sendRequest({cmd:'getIni'}, (function () {
 
 		_pri["createView"] = function () {
 
-			chrome.extension.sendRequest({
+			chrome.runtime.sendMessage({
 				cmd : 'setJson'
 				, sJson : _pri.sData
 			}, function() {

@@ -1,10 +1,10 @@
 {
    "background": {
-      "scripts": [ "background.js" ]
+    "service_worker": "background.js"
    },
-   "browser_action": {
+   "action": {
       "default_icon": "logo16.png",
-      "default_title": "JSON-handle"
+      "default_title": "JSON-handleNew"
    },
    "content_scripts": [ {
       "all_frames": false,
@@ -20,12 +20,15 @@
       "48": "logo48.png"
    },
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDTA0oqw/Y1Aey+BoB6FW35vy2BHNT27eK+S8PZuHas82TxIAi3i3UDYj3bUqpScevWIwgrRBk5v/9jHypmxz4BEFtJFEcpEabl/3fVQmpT1M4owmQP8RMeMFJKa3GBB9gFf9r+DOKc4VwScZ1/dYXvBn3Nk08tiQgW94l+wSr/wwIDAQAB",
-   "manifest_version": 2,
-   "name": "JSON-handle",
+   "manifest_version": 3,
+   "name": "JSON-handleNew",
    "offline_enabled": true,
    "options_page": "options.html",
    "permissions": [ "webRequest", "tabs", "\u003Call_urls>" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.4.19",
-   "web_accessible_resources": [ "JSON-handle/JSON-handle.html" ]
+   "version": "0.4.20",
+   "web_accessible_resources": [{ 
+    "resources": ["JSON-handle/JSON-handle.html"],
+    "matches": []
+  }]
 }

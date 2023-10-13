@@ -7,7 +7,7 @@ chrome.extension = chrome.extension || {
 
 
 
-//chrome.extension.sendRequest({cmd:'getIni'}, (function () {
+//chrome.runtime.sendMessage({cmd:'getIni'}, (function () {
 setTimeout(function() {
 	
 JH.request({}).create(null, 'getIni', {succeed : function (oResp) {

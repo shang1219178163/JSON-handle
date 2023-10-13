@@ -30,7 +30,7 @@ JH.request = JH.newFun(function ($) {
 				switch(sKey) {
 					case 'getJsonString':
 						oRe = buildSend(function (oRequestData, fResponse) {
-							chrome.extension.sendRequest({cmd:'getJson'}, function(response) {
+							chrome.runtime.sendMessage({cmd:'getJson'}, function(response) {
 								var oData = {
 									code : 1,
 									msg : 'ok',
@@ -42,7 +42,7 @@ JH.request = JH.newFun(function ($) {
 						break;
 					case 'setIni':
 						oRe = buildSend(function (oRequestData, fResponse) {
-							chrome.extension.sendRequest({
+							chrome.runtime.sendMessage({
 								cmd:'setIni'
 								, oIni : oRequestData
 							}, function(response) {
