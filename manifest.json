@@ -24,7 +24,7 @@
    "name": "JSON-handleNew",
    "offline_enabled": true,
    "options_page": "options.html",
-   "permissions": [ "webRequest", "tabs", "\u003Call_urls>" ],
+   "permissions": ["storage", "webRequest", "tabs", "\u003Call_urls>" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "0.4.20",
    "web_accessible_resources": [{ 
